@@ -1,0 +1,259 @@
+.gbg{
+    background: url(../img/room3.jpg) no-repeat center center;
+   
+    .bginner{
+        
+        h1{
+            font: 50px/1 'Playfair Display';
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 50px;
+            text-align: center;
+
+            &::after{
+                content: '';
+                display: block;
+                width: 50px;
+                height: 2px;
+                background: #fff;
+                margin: 30px auto;
+                z-index: 2;
+
+            }
+        }
+
+        p{
+            font: 16px/1.3 'noto sans KR';
+            color: #fff;
+            text-align: center;    
+        }
+    }
+}
+
+.inner{
+    #gallery {
+        &::after { content: ""; display: block; clear: both;}
+        article {
+            width: 33%; 
+            box-sizing: border-box; float: left;
+            padding: 0 10px;
+    
+            .inner {
+                width: 100%;
+                position: relative;
+    
+                .pic {
+                    width: 100%; height: 300px; margin-bottom: 20px;
+    
+                    img { 
+                        width: 100%; height: 100%; object-fit: cover;
+                        transition: 0.5s;
+                    }
+                }
+    
+                .ghover{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    padding: 40px;
+                    opacity: 0;
+                    background: rgba(0,0,0,0.7);
+                    padding: 10px;
+    
+                   h2{
+                       position: absolute;
+                       top: 35%;
+                       left: 50%;
+                       transform: translateX(-50%);
+                       font: normal 25px/1 'Playfair Display';
+                       color: #fff;
+                       z-index: 2;
+
+                       &::after{
+                        content: '';
+                        display: block;
+                        width: 30px;
+                        height: 1px;
+                        background: #fff;
+                        margin: 20px auto;
+                        z-index: 2;
+                    }   
+    
+                   }
+
+                   >a{
+                       display: block;
+                       position: absolute;
+                       bottom: 30%;
+                       left: 50%;
+                       transform: translateX(-50%);
+                       font: normal 13px/30px 'Roboto';
+                       color: #fff;
+                       width: 100px;
+                       height: 30px;
+                       border: 1px solid #fff;
+                       box-sizing: border-box;
+                       text-align: center;
+                       z-index: 2;
+                       cursor: pointer;
+
+                       &:hover{
+                           background: rgba(242, 206, 174,0.7)
+                        }
+                   }
+    
+                   &:hover{
+                       opacity: 1;
+                   }
+                }
+            }
+        }
+    }
+}
+
+#imgPop{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index:5;
+    background: rgba(0,0,0,0.7);
+    box-sizing:border-box;
+    padding: 10vw;
+
+    .pic{
+        width: 100%;
+        height: 100%;
+        background: #59422e;
+
+        img{
+            width: 100%;
+             height: 100%;
+             object-fit:contain;
+        }
+    }
+    span{
+        font:  14px/1 "noto sans kr";
+        color: #f2ceae;
+        position: absolute;
+        bottom: 4vw;
+        right: 4vw;
+        cursor: pointer;
+
+    }
+}
+
+/* tablet ----------------------------------------- */
+@media screen and (max-width:$tablet){
+    .gbg{
+        background: url(../img/room3.jpg) no-repeat center center;
+       
+        .bginner{
+            
+            h1{
+                font: 30px/1 'Playfair Display';
+                margin-bottom: 30px;
+    
+    
+                &::after{
+                    margin: 30px auto;
+    
+                }
+            }
+    
+            p{
+                font: 12px/1.3 'noto sans KR';   
+            }
+        }
+    }
+    
+    .inner{
+        #gallery {
+            &::after { content: ""; display: block; clear: both;}
+            article {
+                width: 50%; 
+        
+                .inner {
+        
+                    .ghover{
+        
+                       h2{
+                           font: normal 20px/1 'Playfair Display';
+            
+                        }
+        
+                       }
+    
+                       >a{
+                           width: 90px;
+                           height: 30px;
+                       }
+                    }
+                }
+            }
+        }
+    }
+
+/* mobile ----------------------------------------- */
+@media screen and (max-width:$mobile){
+    .gbg{
+        background: url(../img/room3.jpg) no-repeat center center;
+       &::after{
+            width: 100%;
+            height: 100%;
+       }
+        .bginner{
+            
+            h1{
+                font: 25px/1 'Playfair Display';
+                margin-bottom: 25px;
+                
+                &::after{
+                    width: 20px;
+                    margin: 25px auto;
+                    z-index: 1;
+                }
+            }
+    
+            p{
+                font: 12px/1.3 'noto sans KR';   
+            }
+        }
+    }
+    
+    .inner{
+        #gallery {
+
+            article {
+                width: 100%; 
+        
+                .inner {
+        
+                    .pic {
+                        width: 100%; height: 200px; margin-bottom: 20px;
+                    }
+                    .ghover{
+        
+                       h2{
+                           font: normal 15px/1 'Playfair Display';
+
+                           &::after{
+                                width: 20px;
+                                margin: 20px auto;
+                            }               
+                        }
+    
+                       >a{
+                           width: 60px;
+                           height: 30px;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}

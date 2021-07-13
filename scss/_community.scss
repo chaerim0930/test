@@ -1,0 +1,384 @@
+@charset 'utf-8'; 
+ 
+.community{
+
+    .sub_visual{
+        background: url(../img/commuBg.jpg) no-repeat center center; 
+        .bginner{
+        
+            h1{
+                font: 50px/1 'Playfair Display';
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 50px;
+                text-align: center;
+    
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 50px;
+                    height: 2px;
+                    background: #fff;
+                    margin: 30px auto;
+                    z-index: 2;
+    
+                }
+            }
+    
+            p{
+                font: 16px/1.3 'noto sans KR';
+                color: #fff;
+                text-align: center;    
+            }
+        }    
+    }
+    .inner{
+        .searchBar{
+            padding: 20px 40px;
+            border: 2px solid #59422E;
+            box-sizing: border-box;
+            margin-bottom: 100px;
+            &::after,&::before{
+                display: block;
+                content: '';
+                clear: both;
+            }
+            div{
+                float: left;
+
+                label{
+                    font: 13px/1 'noto sans KR';
+                    color: #999;
+                }
+                select{
+                    width: 150px;
+                    background: #eee;
+                    font: 13px/1 'noto sans KR';
+                }
+
+                input[type=text]{
+                    width: 300px;
+                    height: 25px;
+                    background: #eee;
+                    font: 13px/1 'noto sans KR';
+                    border:none;
+                }
+
+                input[type=submit]{
+                    width: 50px;
+                    height: 25px;
+                    background: #59422E;
+                    font: 13px/25px 'noto sans KR';
+                    border:none;  
+                    color: #fff;
+                }
+
+                &:nth-child(1){
+
+                    &::after{
+                        content: '';
+                        display: inline-block;
+                        width: 1px;
+                        height: 20px;
+                        background: #999;
+                        margin-left: 30px;
+                        vertical-align: bottom;
+                    }
+                }
+
+                &:nth-child(2){
+                    margin-left: 30px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        table{
+            width: 100%;
+
+          
+            th{
+                padding: 20px;
+                color: #59422E;
+                border-bottom:2px solid #59422E;
+
+                &:nth-of-type(1){width:10%;}
+                &:nth-of-type(2){width:10%;}
+                &:nth-of-type(3){width:60%;}
+                &:nth-of-type(4){width:10%;}
+                &:nth-of-type(5){width:10%;}
+            }
+
+            td{
+                padding:20px;
+                border-bottom: 1px solid #ddd;
+                text-align: center;
+                font: 15px/1 "noto sans kr";
+                color: #555;
+
+                a{
+                    font: 15px/1 "noto sans kr";
+                    color: #555;    
+                }
+                &:nth-of-type(3){text-align:left;}
+            }
+
+        }
+
+        .buttons{
+            text-align: center;
+            margin:30px 0;
+
+            ul{
+                display: inline-block;
+
+                li{
+                    float:left;
+                    width: 30px;
+                    height: 30px;
+                    i.fas{
+                      font-size: 15px;
+                      color: #59422E; 
+                    }
+                    a{
+                        display: block;
+                        box-sizing: border-box;
+                        font: 15px/30px "noto sans kr";
+                        color: #59422E;
+
+                        &.on{
+                            border-radius: 50%;
+                            background: #59422E;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* tablet ----------------------------------------- */
+@media screen and (max-width:$tablet){
+    .community{
+
+        .sub_visual{
+            .bginner{
+            
+                h1{
+                    font: 30px/1 'Playfair Display';
+                    margin-bottom: 30px;
+        
+                    &::after{
+                       margin: 30px auto;
+                    }
+                }
+        
+                p{
+                    font: 12px/1.3 'noto sans KR';
+                }
+            }    
+        }
+        .inner{
+            .searchBar{
+                margin-bottom: 50px;
+                div{
+
+                    &:nth-child(3){
+                        margin-top: 20px;
+                    }
+                }
+            }
+    
+            table{
+                width: 100%;
+    
+              
+                th{
+                    padding: 20px;
+                    color: #59422E;
+                    border-bottom:2px solid #59422E;
+    
+                    &:nth-of-type(1){display: none;}
+                    &:nth-of-type(2){width:15%;}
+                    &:nth-of-type(3){width:60%;}
+                    &:nth-of-type(4){width:10%;}
+                    &:nth-of-type(5){width:15%;}
+                }
+    
+                td{
+                    padding:20px;
+                    border-bottom: 1px solid #ddd;
+                    text-align: center;
+                    font: 15px/1 "noto sans kr";
+                    color: #555;
+                    &:nth-of-type(1){display: none;}
+                    a{
+                        font: 15px/1 "noto sans kr";
+                        color: #555;    
+                    }
+                    &:nth-of-type(3){text-align:left;}
+                }
+    
+            }
+    
+            .buttons{
+                text-align: center;
+                margin:30px 0;
+    
+                ul{
+                    display: inline-block;
+    
+                    li{
+                        float:left;
+                        width: 30px;
+                        height: 30px;
+                        i.fas{
+                          font-size: 15px;
+                          color: #59422E; 
+                        }
+                        a{
+                            display: block;
+                            box-sizing: border-box;
+                            font: 15px/30px "noto sans kr";
+                            color: #59422E;
+    
+                            &.on{
+                                border-radius: 50%;
+                                background: #59422E;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* mobile ----------------------------------------- */
+@media screen and (max-width:$mobile){
+    .community{
+
+        .sub_visual{
+            .bginner{
+            
+                h1{
+                    font: 25px/1 'Playfair Display';
+                    margin-bottom: 25px;
+                 
+        
+                    &::after{
+                        width: 20px;
+                        margin: 25px auto;
+                        z-index: 1;
+                    }
+                }
+        
+                p{
+                    font: 12px/1.3 'noto sans KR';   
+                }
+            }    
+        }
+        .inner{
+            .searchBar{
+                padding: 10px 10px;
+                border: 2px solid #59422E;
+                box-sizing: border-box;
+                margin-bottom: 100px;
+                div{
+                    float: none;
+    
+                    input[type=text]{
+                        width: 150px;
+                    }
+    
+                    &:nth-child(1){
+    
+                        &::after{
+                           display: none;
+                        }
+                    }
+    
+                    &:nth-child(2){
+                        margin-left:0;
+                        margin-right: 0;
+                        margin-top: 10px;
+                    }
+
+                    &:nth-child(3){
+                        margin-left:0;
+                        margin-right: 0;
+                        margin-top: 10px;
+                    }
+                }
+            }
+    
+            table{
+                width: 100%;
+    
+              
+                th{
+                    padding: 20px;
+                    color: #59422E;
+                    border-bottom:2px solid #59422E;
+    
+                    &:nth-of-type(2){display: none;}
+                    &:nth-of-type(3){width:70%;}
+                    &:nth-of-type(4){width:30%;}
+                    &:nth-of-type(5){display: none;}
+                }
+    
+                td{
+                    padding:20px;
+                    border-bottom: 1px solid #ddd;
+                    text-align: center;
+                    font: 13px/1 "noto sans kr";
+                    color: #555;
+                    &:nth-of-type(2){display: none;}
+                    &:nth-of-type(5){display: none;}
+    
+                    a{
+                        font: 13px/1 "noto sans kr";
+                        color: #555;    
+                    }
+                    &:nth-of-type(3){text-align:left;}
+                }
+    
+            }
+    
+            .buttons{
+                text-align: center;
+                margin:30px 0;
+    
+                ul{
+                    display: inline-block;
+    
+                    li{
+                        float:left;
+                        width: 30px;
+                        height: 30px;
+                        i.fas{
+                          font-size: 15px;
+                          color: #59422E; 
+                        }
+                        a{
+                            display: block;
+                            box-sizing: border-box;
+                            font: 15px/30px "noto sans kr";
+                            color: #59422E;
+    
+                            &.on{
+                                border-radius: 50%;
+                                background: #59422E;
+                                color: #fff;
+                            }
+                        }
+
+                        &:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11){display: none;}
+                    }
+                }
+            }
+        }
+    }  
+}
