@@ -1,0 +1,94 @@
+{
+    "board":[
+        {
+            "asktype":"예약취소",
+            "title":"My love was as cruel",
+            "writer":"홍길동1",
+            "date":"2021-06-24"
+        },
+        {
+            "asktype":"다이닝예약",
+            "title":"as the cities I lived in",
+            "writer":"홍길동2",
+            "date":"2021-06-25"
+        },
+        {
+            "asktype":"건의사항",
+            "title":"Everyone looked worse in the light",
+            "writer":"홍길동3",
+            "date":"2021-06-26"
+        },
+        {
+            "asktype":"예약취소",
+            "title":"There are so many lines",
+            "writer":"홍길동4",
+            "date":"2021-06-25"
+        },
+        {
+            "asktype":"에약확인",
+            "title":"that I've crossed unforgiven",
+            "writer":"홍길동5",
+            "date":"2021-06-24"
+        },
+        {
+            "asktype":"다이닝예약",
+            "title":"I'll tell you the truth",
+            "writer":"홍길동6",
+            "date":"2021-06-23"
+        },
+        {
+            "asktype":"건의사항",
+            "title":"but never goodbye",
+            "writer":"홍길동7",
+            "date":"2021-06-22"
+        },
+        {
+            "asktype":"예약확인",
+            "title":"I don't wanna look at anything",
+            "writer":"홍길동8",
+            "date":"2021-06-21"
+        },
+        {
+            "asktype":"예약취소",
+            "title":"else now that I saw you",
+            "writer":"홍길동9",
+            "date":"2021-06-20"
+        },
+        {
+            "asktype":"예약취소",
+            "title":"I don't wanna think of anything",
+            "writer":"홍길동10",
+            "date":"2021-06-19"
+        },
+        {
+            "asktype":"다이닝예약",
+            "title":"I'll tell you the truth",
+            "writer":"홍길동6",
+            "date":"2021-06-23"
+        },
+        {
+            "asktype":"건의사항",
+            "title":"but never goodbye",
+            "writer":"홍길동7",
+            "date":"2021-06-22"
+        },
+        {
+            "asktype":"예약확인",
+            "title":"I don't wanna look at anything", 
+            "writer":"홍길동8",
+            "date":"2021-06-21"
+        },
+        {
+            "asktype":"예약확인",
+            "title":"else now that I saw you",
+            "writer":"홍길동9",
+            "date":"2021-06-20"
+        },
+        {
+            "asktype":"다이닝예약",
+            "title":"I don't wanna think of anything",
+            "writer":"홍길동10",
+            "date":"2021-06-19"
+        }
+    ]
+}
